@@ -1,27 +1,29 @@
 ```
+# Compressed archives
+*.zip
+
+# Environment files
+.env
+.env.local
+*.env.*
+
 # Dependencies
 node_modules/
+.npm/
+.yarn/
 
 # Build outputs
 dist/
 build/
 target/
+out/
 
-# Logs
-*.log
+# TypeScript/JavaScript
+*.tsbuildinfo
+.next/
+.nuxt/
 
-# Environment variables
-.env
-.env.local
-*.env.*
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Python specific
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -30,50 +32,14 @@ __pycache__/
 env/
 venv/
 .venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
+.ENV
+.python-version
 
-# Node.js specific
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-node_modules/
-dist/
-build/
-.nyc_output
-coverage/
-*.lcov
-.next/
-.nuxt/
-public/
-!.gitkeep
-out/
-export/
-.next
-.cache/
-storybook-static/
-
-# TypeScript specific
-*.tsbuildinfo
-*.js.map
-*.ts.map
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
 
 # OS generated files
 .DS_Store
@@ -83,4 +49,27 @@ storybook-static/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+istanbul/
+.mocha
+.jest/
+
+# Database
+*.sqlite
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
 ```
